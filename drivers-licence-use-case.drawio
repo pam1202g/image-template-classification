@@ -1,0 +1,129 @@
+<mxfile host="app.diagrams.net" modified="2023-06-27T22:24:43.586Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="0gAiAFvvYnb4gn0Pfqr2" version="21.2.1" type="device">
+  <diagram name="Page-1" id="yIo07FklmqdhN--KLV7j">
+    <mxGraphModel dx="1149" dy="591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-1" value="Extracting Image of &lt;br&gt;Driver Licence or Passport &lt;br&gt;from the Background" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="32" y="534" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-2" value="CNN or Vision Transformer based Image Classifier &lt;br&gt;as part of overall Document Identification&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="298" y="494" width="120" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="422" y="545" as="sourcePoint" />
+            <mxPoint x="562" y="545" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-4" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="422" y="604" as="sourcePoint" />
+            <mxPoint x="752" y="796" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="552" y="604" />
+              <mxPoint x="552" y="796" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-5" value="Human-in-the-loop" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="762" y="766" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-6" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="219" y="566" as="sourcePoint" />
+            <mxPoint x="289.71067811865476" y="566" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-7" value="Deskew so that OCR can work properly" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="572" y="506" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-8" value="Identified Driver Licence" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="422" y="510" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-9" value="Edge Detection and Resize to a correct aspect ratio so the Image size conforms to a genuine Driver Licence Template using &lt;br&gt;Template Approximations" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="479" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-10" value="Extract Parts of Driver Licence, &lt;br&gt;e.g., text for Driver Licence,&lt;br&gt;New South Wales,Name, Address, etc.&lt;br&gt;and send to OCR to validate&lt;br&gt;if the Driver Licence matches the Template" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1412" y="494" width="260" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-11" value="Region Detection using Deep Learning base Object Detection&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1111" y="515" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-12" value="Call API with all the information retrieved&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1422" y="683" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-14" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1332" y="756" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="gXYnHt1bZeSuqf82n9Sf-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="962" y="856" as="sourcePoint" />
+            <mxPoint x="892" y="796" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-16" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="702" y="546" as="sourcePoint" />
+            <mxPoint x="802" y="546" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-17" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1005" y="546" as="sourcePoint" />
+            <mxPoint x="1105" y="546" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-18" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1302" y="544.5" as="sourcePoint" />
+            <mxPoint x="1402" y="544.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-19" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1458" y="606" as="sourcePoint" />
+            <mxPoint x="778" y="746" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1458" y="646" />
+              <mxPoint x="778" y="646" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-20" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1532" y="606" as="sourcePoint" />
+            <mxPoint x="1532" y="676" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-21" value="Parts of Template match unsuccessful" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="900" y="653" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-22" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1531" y="758" as="sourcePoint" />
+            <mxPoint x="1421" y="798" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1531" y="798" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-23" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1373" y="840" as="sourcePoint" />
+            <mxPoint x="1373" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-24" value="Output from API" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="804" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-25" value="Unsuccessful Response" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="804" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gXYnHt1bZeSuqf82n9Sf-26" value="Successful Response" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1317" y="910" width="110" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
